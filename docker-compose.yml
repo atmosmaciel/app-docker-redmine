@@ -1,0 +1,20 @@
+version: '3'
+services:
+
+    db:
+        image: mysql:5.7
+        volumes:
+            - ./.data/db:/var/lib/mysql
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: redmine
+        restart: always
+
+    redmine:
+        image: stc/redmine
+        ports:
+            - 3000:3000
+        environment:
+            REDMINE_DB_MYSQL: db
+            REDMINE_DB_PASSWORD: root
+        restart: always
