@@ -11,7 +11,7 @@ Faça o clone do projeto no seu diretório de trabalho com:
 
 Toda estrutura que você precisa está neste diretório.
 
-Não esqueça de atualizar suas informações nos arquivos ```Dockerfile``` e ```docker-compose.yml```
+O arquivo ```docker-compose.yml``` já possui configurações pré-definidas de senha que você pode alterar de acordo com a nescessidade. O MAINTAINER do Dockerfile deve ser alterado por conta do usuário mantenedor.
 
 #### Instalação de Plugins
 
