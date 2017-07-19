@@ -27,11 +27,15 @@ Mais informações sobre o Dockerfile você pode encontrar na [documentação de
 
 ##### Rodando o Docker Compose
 
-Depois de gerar a imagem com os novos plugins instalados. Você irá utilizar o Docker Compose para subir a nova aplicação para isto utilize o seguinte comando:
+Depois de gerar a imagem com os novos plugins instalados. Você irá utilizar o Docker Compose para subir a nova aplicação, para isto utilize o seguinte comando:
 
 ```docker-compose up -d .```
 
 O parâmentro *-d* fará com que o novo container seja executado em background.
+
+### Plugin previamente instalado
+
+Este projeto já contém previamente instalado o plugin [Monitoring & Controlling (M&C) - Redmine Plugin](https://github.com/alexmonteiro/Redmine-Monitoring-Controlling) como exemplo e já está pronto para uso, você pode habilitá-lo dentro do Redmine.
 
 ### Como contribuir
 
@@ -39,4 +43,4 @@ Para contribuir com este projeto você pode utilizar o [Gitghub Flow](https://gu
 
 ### Licença
 
-Este projeto está sob uma licença [MIT](LICENSE.txt)
+Este projeto está sob uma licença [MIT](LICENSE.txt).
