@@ -11,6 +11,8 @@ Faça o clone do projeto no seu diretório de trabalho com:
 
 Toda estrutura que você precisa está neste diretório.
 
+Não esqueça de atualizar suas informações nos arquivos ```Dockerfile``` e ```docker-compose.yml```
+
 #### Instalação de Plugins
 
 Todos os plugins são instalados dentro da pasta *plugins*. Se você desejar adicionar um novo plugin à instância do Redmine instale este plugin dentro deste diretório.
