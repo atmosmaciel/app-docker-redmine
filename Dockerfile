@@ -1,4 +1,4 @@
-FROM redmine:3.1
+FROM redmine:latest
 
 MAINTAINER User Namer <username@email.com>
 
@@ -19,11 +19,6 @@ RUN for x in `ls *.zip`;do unzip $x;done
 
 #remove os arquivos .zip
 RUN rm *.zip
-
-RUN chown -R redmine:redmine *
-
-# renomeia os arquivos para caixa baixa
-# RUN find /usr/src/redmine/plugins -depth -exec rename 's/(.*)\/([^\/]*)/$1\/\L$2/' {} \;
 
 # volta para a pasta raiz do redmine
 WORKDIR /usr/src/redmine/
