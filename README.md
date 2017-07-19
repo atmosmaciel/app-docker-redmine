@@ -23,7 +23,7 @@ Assim que você concluir a instalação do Plugin rode o seguinte comando na ra�
 
 ```docker build -t vendor/myapp .```
 
-Este comando vai adicionar o novo plugin à instância da aplicação que será criada.
+Este comando vai adicionar o novo plugin à instância da aplicação que será criada. O parâmetro *-t* vai atribuir uma tag à imagem que será criada.
 
 Mais informações sobre o Dockerfile você pode encontrar na [documentação de referência](https://docs.docker.com/engine/reference/builder/).
 
