@@ -8,22 +8,23 @@ RUN echo deb http://deb.debian.org/debian stretch contrib non-free | tee /etc/ap
 # install unzip and dependences
 RUN apt-get update && apt-get install unzip apt-utils -y -f
 
-# copia os plugins para dentro do diterório do Redmine
+# copy the plugins into the Redmine directory
 COPY plugins/ /usr/src/redmine/plugins
 
-# entra no diretório de plugins do Redmine
+# enters the Redmine plugin directory
 WORKDIR /usr/src/redmine/plugins
 
-# Descompacta os arquivos
+# unzip files
 RUN for x in `ls *.zip`;do unzip $x;done
 
-#remove os arquivos .zip
+# remove .zip files
 RUN rm *.zip
 
-# volta para a pasta raiz do redmine
+# back to the redmine root folder
 WORKDIR /usr/src/redmine/
 
 EXPOSE 3000
+
 CMD ["rails", "server", "-b", "0.0.0.0"]
 
 ###
