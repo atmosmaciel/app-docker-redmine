@@ -6,8 +6,8 @@ services:
         volumes:
             - ./.data/db:/var/lib/mysql
         environment:
-            MYSQL_ROOT_PASSWORD: your-password
-            MYSQL_DATABASE: your-database
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: redmine
         restart: always
 
     redmine:
@@ -16,5 +16,5 @@ services:
             - 3000:3000
         environment:
             REDMINE_DB_MYSQL: db
-            REDMINE_DB_PASSWORD: your-password
+            REDMINE_DB_PASSWORD: root
         restart: always
