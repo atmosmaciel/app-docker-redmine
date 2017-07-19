@@ -31,7 +31,7 @@ Mais informações sobre o Dockerfile você pode encontrar na [documentação de
 
 Depois de gerar a imagem com os novos plugins instalados. Você irá utilizar o Docker Compose para subir a nova aplicação, para isto utilize o seguinte comando:
 
-```docker-compose up -d .```
+```docker-compose up -d```
 
 O parâmentro *-d* fará com que o novo container seja executado em background.
 
