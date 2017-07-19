@@ -1,6 +1,6 @@
 FROM redmine:latest
 
-MAINTAINER Atmos Maciel <atmos.souza@stc.ma.gov.br>
+MAINTAINER User Namer <username@email.com>
 
 COPY plugins /usr/src/redmine/plugins
 
