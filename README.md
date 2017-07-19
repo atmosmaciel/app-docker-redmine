@@ -39,6 +39,8 @@ O parâmentro *-d* fará com que o novo container seja executado em background.
 
 Você pode tentar instalar o plugin [Monitoring & Controlling (M&C) - Redmine Plugin](https://github.com/alexmonteiro/Redmine-Monitoring-Controlling) como exemplo. Faça o clone para dentro da pasta *plugins* ou baixe e descompacte o arquivo, renomeie a pasta para ```redmine_monitoring_controlling```. Agora siga os passos para gerar o Dockerfile em diante.
 
+OBS: **o plugin Monitoring & Controlling (M&C) - Redmine Plugin já está dentro da pasta plugins, como exemplo para uso**.
+
 ### Como contribuir
 
 Para contribuir com este projeto você pode utilizar o [Gitghub Flow](https://guides.github.com/introduction/flow/).
