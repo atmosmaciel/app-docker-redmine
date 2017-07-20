@@ -31,8 +31,6 @@ Assim que você concluir a instalação do Plugin rode o seguinte comando na ra�
 
 Este comando vai adicionar o novo plugin à instância da aplicação que será criada. O parâmetro *-t* vai atribuir uma tag à imagem que será criada.
 
-**OBS: não esqueça de alterar no arquivo docker-compose.yml o nome da imagem no serviço *redmine* para o nome criado com sua tag específica**.
-
 Mais informações sobre o Dockerfile você pode encontrar na [documentação de referência](https://docs.docker.com/engine/reference/builder/).
 
 ##### Rodando o Docker Compose
@@ -42,6 +40,8 @@ Depois de gerar a imagem com os novos plugins instalados. Você irá utilizar o 
 ```docker-compose up -d```
 
 O parâmentro *-d* fará com que o novo container seja executado em background.
+
+**OBS: não esqueça de alterar no arquivo docker-compose.yml o nome da imagem no serviço *redmine* para o nome criado com sua tag específica**.
 
 ### Como contribuir
 
